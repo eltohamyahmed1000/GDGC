@@ -1,0 +1,157 @@
+
+body{
+    font-family: "Roboto", serif
+}
+
+.parent{
+    width:90% ;
+    padding-top: 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax( 270px , 1fr));
+    gap: 20px;
+    align-content: center;
+    justify-items: center;
+
+}
+
+/* small */
+@media (max-width: 400px){
+    .parent , .back{
+        width: 300px;
+    }
+}
+@media (min-width: 400px) and (max-width:600px){
+    .parent , .back{
+        width: 400px;
+    }
+}
+@media (min-width: 768px){
+    .parent , .back{
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width: 992px){
+    .parent , .back{
+        width: 970px;
+    }
+
+}
+/* large */
+@media (min-width: 1200px){
+    .parent , .back{
+        width: 1170px;
+    }
+}
+
+.back{
+    height: 295px;
+    margin: auto;
+    background-image: url(../Img/img\ Background.png);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.back p{
+    color: black;
+    margin-top: 35px;
+    margin-left: -650px;
+    width: 300px;
+    text-align: left;
+    font-size: 20px;
+}
+.back p span{
+    color: rgb(38 93 221);
+}
+
+img{
+    width: 180px;
+    border-radius: 7px;
+}
+
+.offer h2{
+    display: inline;
+}
+.offer{
+    width: 90%;
+    padding-top: 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center
+}
+
+.cart{
+    padding: 10px;
+    width: 220px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    box-shadow: 0px 5px 3px 0px #a3a3a3;  
+}
+.icon{
+    width: 35px;
+    height: 35x;
+    border-radius: 50%;
+    color: aqua;
+    margin-top: 10px;
+    margin-left: -45px;
+    position: absolute;
+}
+
+.icon:hover{
+    color: white;
+    background-color: red;
+    transition: 0.5s;
+}
+
+h3{
+    margin-top: 5px;
+}
+del{ 
+    color: #909090;
+    display: inline;
+    margin-left: -140px;
+}
+
+p{
+    color: red;
+    font-weight: bold;
+    margin-top: -20px;
+    margin-left: 140px;
+}
+
+.star{
+    margin-top: -76px;
+    margin-left: 58px;
+    position: absolute;
+}
+.star img{
+    width: 100px;
+
+}
+
+button{
+    width: 200px;
+    height: 35px;
+    background-color: rgb(161, 18, 5);
+    border: none;
+    border-radius: 7px;
+    color: aliceblue;
+    font-weight:bold  ;
+
+}
+
+button:hover{
+    color: rgb(5, 5, 161);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    transition: 0.5s;
+}
